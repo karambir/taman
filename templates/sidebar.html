@@ -1,7 +1,11 @@
 <nav>
   <h1>Hi.</h1>
   <a href="{{ SITEURL }}/">
+    {% if USER_LOGO_URL %}
+    <img src="{{ SITEURL }}{{ USER_LOGO_URL }}" id="gravatar" alt="My photo"/>
+    {% else %}
     <img src="{{ SITEURL }}/theme/images/logo.png" id="gravatar" alt="My photo"/>
+    {% endif %}
   </a>
   <h2><a href="{{ SITEURL }}/">I'm {{ AUTHOR }}</a></h2>
 

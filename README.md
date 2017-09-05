@@ -17,6 +17,7 @@ You can see the [theme in action](http://carambir.in/).
 - supports google analytics
 - custom list of links
 - social links with FontAwesome4
+- custom favicon and logo urls
 - no custom menu
 
 ## INSTALL
@@ -32,6 +33,17 @@ Supports a number of common global variables but patches are welcomed if you nee
 - `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 
 - `TAGLINE` some text rendered right below the logo
+
+- To set custom logo and favicon set following in config:
+
+    STATIC_PATHS = ['images', 'extra/favicon.png', 'extra/logo.png']
+    EXTRA_PATH_METADATA = {
+        'extra/favicon.png': {'path': 'favicon.png'},
+        'extra/logo.png': {'path': 'logo.png'},
+    }
+
+    USER_LOGO_URL = '/logo.png'
+    USER_FAVICON_URL = '/favicon.png'
 
 When developing locally, you may want to set the following variable: `SITEURL = http://localhost:8000`
 
