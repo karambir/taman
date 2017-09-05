@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block head %}
+<meta name="keywords" content="{{ article.tags|join(', ')  }}">
+{% endblock %}
+
+{% block title %}&ndash; {{ article.title }}{% endblock %}
+
+{% block content %}
+  <p class="meta">
+    {{ article.date|strftime('%d %B %Y') }}
+    <a href="/">
+      <i class="home fa fa-home"></i>
+    </a>
+  </p>
+
+  <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+  
+  <div class="article_text" id="post">
+    {{ article.content }}
+  </div>
+
+  <div class="article_meta related">
+    <h3>Category: </h3>
+    <span><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</span>
+    
+    {% if article.tags %}
+    <h3>Tags:</h3>
+    <span>
+      {% for tag in article.tags %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+      {% endfor %}
+    </span>
+    {% endif %}
+  </div>
+
+  {% if DISQUS_SITENAME %}
+  <div id="article_comments comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_identifier = "{{ article.url }}";
+        (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+    </script>
+  </div>
+  {% endif %}
+{% endblock %}

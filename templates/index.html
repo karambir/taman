@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="home">
+  <h2><i class="fa fa-bookmark"></i> Blog Posts </h2>
+  <ul class="posts">
+    {% for article in articles %}
+    <li>
+      <span>{{ article.date|strftime('%d %B %Y') }} &raquo;</span>
+      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

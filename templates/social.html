@@ -1,0 +1,95 @@
+Follow me:
+<div id="stalker">
+{% for name, username in SOCIAL %}
+
+  {% if name == 'gitlab' %}
+  <a title="{{ username }} on Gitlab" href="https://gitlab.com/{{ username }}">
+    <i class="fa fa-gitlab"></i>
+  </a>
+  {% endif %}
+
+  {% if name == 'github' %}
+  <a title="{{ username }} on Github" href="https://github.com/{{ username }}">
+    <i class="fa fa-github"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'bitbucket' %}
+  <a title="{{ username }} on Bitbucket" href="https://bitbucket.com/{{ username }}/">
+    <i class="fa fa-bitbucket"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'hacker_news' %}
+  <a title="{{ username }} on Hacker News" href="https://news.ycombinator.com/user?id={{ username }}">
+     <i class="fa fa-hacker-news"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'stackexchange' %}
+  <a title="{{ username }} on Stack Exchange" href="https://stackexchange.com/users/{{ username }}">
+    <i class="fa fa-stack-exchange"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'stackoverflow' %}
+  <a title="{{ username }} on Stack Overflow" href="http://stackoverflow.com/users/{{ username }}">
+    <i class="fa fa-stack-overflow"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'twitter' %}
+  <a title="{{ username }} on Twitter" href="https://twitter.com/{{ username }}">
+    <i class="fa fa-twitter"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'facebook' %}
+  <a title="{{ username }} on Facebook" href="https://facebook.com/{{ username }}">
+    <i class="fa fa-facebook"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'tumblr' %}
+  <a title="{{ username }} on tumblr" href="https://{{ username }}.tumblr.com">
+    <i class="fa fa-tumblr"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'linkedin' %}
+  <a title="{{ username }} on LinkedIn" href="https://www.linkedin.com/in/{{ username }}">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'gplus' %}
+  <a title="{{ username }} on Google Plus" href="https://plus.google.com/{{ username }}">
+    <i class="fa fa-google-plus"></i>
+  </a>
+  {% endif %}
+
+  {% if  name == 'flickr' %}
+  <a title="{{ username }} on Flickr" href="https://www.flickr.com/photos/{{ username }}">
+    <i class="fa fa-flickr"></i>
+  </a>
+  {% endif %}
+
+  {% if name == 'instagram' %}
+  <a title="{{ username }} on Instagram" href="https://instagram.com/{{ username }}">
+    <i class="fa fa-instagram"></i>
+  </a>
+  {% endif %}
+
+  {% if name == 'lastfm' %}
+  <a title="{{ username }} on Last.fm" href="https://www.last.fm/user/{{ username }}">
+    <i class="fa fa-lastfm"></i>
+  </a>
+  {% endif %}
+{% endfor %}
+
+{% if FEED_ALL_ATOM %}
+<a title="Atom feed" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
+  <i class="fa fa-rss"></i>
+</a>
+{% endif %}
+</div>
