@@ -25,8 +25,9 @@
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS" />
   {% endif %}
 
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/all.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css">
+  {% assets filters="cssmin", output="css/style.min.css", "css/all.css", "css/pygments-monokai.css", "css/custom.css" %}
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+  {% endassets %}
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
   {% block head %}
