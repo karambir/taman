@@ -49,7 +49,7 @@ When developing locally, you may want to set the following variable: `SITEURL = 
 
 ## AUTHOR
 
-Lagom theme is originally authored by [Matt Swanson](https://mdswanson.com/). Theme color is copied from [Daniel Berkompas](http://blog.danielberkompas.com/). I started with [pelican-svbhack](https://github.com/gfidente/pelican-svbhack) as base.
+Lagom theme is originally authored by [Matt Swanson](https://mdswanson.com/). I started with [pelican-svbhack](https://github.com/gfidente/pelican-svbhack) as base.
 
 ## LICENSE
 
