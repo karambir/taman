@@ -5,6 +5,14 @@
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}
 
+{% block canonical_rel %}
+  {% if article.canonical_url %}
+    <link rel="canonical" href="{{ article.canonical_url }}">
+  {% else %}
+    <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   <p class="meta">
     {{ article.date|strftime('%d %B %Y') }}
@@ -14,7 +22,7 @@
   </p>
 
   <h1 class="title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-  
+
   <div class="article_text" id="post">
     {{ article.content }}
   </div>
@@ -22,7 +30,7 @@
   <div class="article_meta related">
     <h3>Category: </h3>
     <span><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</span>
-    
+
     {% if article.tags %}
     <h3>Tags:</h3>
     <span>

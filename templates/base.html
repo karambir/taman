@@ -13,6 +13,8 @@
     {% block title %}{% endblock %}
   </title>
 
+  {% block canonical_rel %}{% endblock %}
+
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   {% if USER_FAVICON_URL %}
   <link rel="shortcut icon" href="{{ SITEURL }}{{ USER_FAVICON_URL }}">{% else %}
@@ -29,7 +31,7 @@
   <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
   {% endassets %}
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
+
   {% block head %}
   {% endblock %}
 </head>
