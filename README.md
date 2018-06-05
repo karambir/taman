@@ -6,7 +6,7 @@ The name is synonym of word [Lagom](https://en.wikipedia.org/wiki/Lagom) in Slav
 
 ## DEMO
 
-You can see the [theme in action](http://carambir.in/).
+You can see the [theme in action](http://www.karambir.in/).
 
 ![theme screenshot](https://raw.github.com/karambir/taman/master/screenshot.png)
 
@@ -20,6 +20,7 @@ You can see the [theme in action](http://carambir.in/).
 - social links with FontAwesome4
 - custom favicon and logo urls
 - no custom menu
+- support canonical urls
 
 ## INSTALL
 
@@ -39,6 +40,8 @@ Supports a number of common global variables but patches are welcomed if you nee
 - `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 
 - `TAGLINE` some text rendered right below the logo
+
+- Use `canonical_url` var in article markdown file to specify original url of article.
 
 - To set custom logo and favicon set following in config:
 
