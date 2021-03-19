@@ -15,10 +15,10 @@ You can see the [theme in action](http://www.karambir.in/).
 - responsive
 - syntax highlighting for pre blocks
 - minify css files
-- supports google analytics
+- supports Google Analytics or custom analytics script
 - custom list of links
 - social links with FontAwesome4
-- custom favicon and logo urls
+- a custom favicon and logo urls
 - no custom menu
 - support canonical urls
 
@@ -29,7 +29,7 @@ Clone the [repository](https://github.com/karambir/taman), edit your `pelicancon
 The theme use *assets* plugin to handle minification of css files from [here](https://github.com/getpelican/pelican-plugins/tree/maser/assets)
 
 - Install required package for *assets* plugin by `pip install webassets`
-- Refer this [documention](https://github.com/getpelican/pelican-plugins#how-to-use-plugins) to install plugin.
+- Refer this [documentation](https://github.com/getpelican/pelican-plugins#how-to-use-plugins) to install plugin.
 
 ## PELICANCONF.PY
 
@@ -37,7 +37,7 @@ Supports a number of common global variables but patches are welcomed if you nee
 
 - `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
 
-- `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
+- `CUSTOM_ANALYTICS` set this to your custom js script(including script tag). This is added at the end of body.
 
 - `TAGLINE` some text rendered right below the logo
 
