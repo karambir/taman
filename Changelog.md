@@ -17,7 +17,7 @@
 ### Removed
 - Legacy IE conditional comments
 
-## 1.1.0 [2017-09-24]
+## 1.1.0 [2021-03-21]
 
 ### Added
 - Add way to specify canonical url for each article
