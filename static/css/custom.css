@@ -9,8 +9,152 @@
 
 .footer {
     margin-top: 10px;
+    width: 100%;
+    font-size: 80%;
+    color: #666;
+    border-top: 4px solid #EEE;
+    overflow: hidden;
 }
 
 #home h2 {
     color: #181818;
+}
+
+/* Bootstrap 5 compatibility styles */
+body {
+    font-size: 16px;
+    background-color: white;
+    color: #222222;
+    line-height: 24px;
+    margin: 0;
+    border-top: 7px solid #3267aa;
+    font-family: "open sans", sans-serif;
+}
+
+.sidebar {
+    padding-top: 25px;
+    font-family: "open sans", sans-serif;
+}
+
+.content {
+    font: 400 16px/22px "open sans", sans-serif;
+    border-left: 1px solid #DDD;
+    padding-left: 40px;
+    padding-top: 25px;
+    min-height: 400px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #181818;
+    font-family: "open sans", sans-serif;
+    font-weight: 600;
+}
+
+a {
+    color: #3267aa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3267aa;
+    text-decoration: underline;
+}
+
+#gravatar {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+#stalker {
+    display: inline-block;
+    height: 18px;
+    margin-left: 5px;
+}
+
+#stalker a {
+    width: 29px;
+    overflow: hidden;
+    float: left;
+}
+
+#stalker i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+#bio {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: dotted #ddd;
+    border-width: 1px 0;
+    padding-top: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767.98px) {
+    .content {
+        border-left: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sidebar {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #stalker {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #stalker a {
+        margin-bottom: 10px;
+    }
+}
+
+/* Article styling */
+.article_text {
+    margin-bottom: 30px;
+}
+
+.article_text img {
+    max-width: 100%;
+    height: auto;
+}
+
+.meta {
+    color: #aaa;
+    margin: 0 0 10px 0;
+}
+
+/* Code blocks */
+pre {
+    white-space: pre;
+    overflow: auto;
+    border: 1px solid #ddd;
+    font-size: 85%;
+    padding: 0.4em;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+code, pre {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}
+
+#post code {
+    border: 1px solid #ddd;
+    font-size: 85%;
+    padding: 0 .2em;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+}
+
+#post pre code {
+    border: none;
+    background-color: transparent;
 }

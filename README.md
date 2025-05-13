@@ -1,12 +1,10 @@
 # TAMAN
 
-Taman is a responsive theme for [Pelican](http://getpelican.com), it is hackish port of Jekyll's [Logom](https://github.com/swanson/lagom) theme. 
+Taman is a responsive theme for [Pelican](http://getpelican.com), it is hackish port of Jekyll's [Logom](https://github.com/swanson/lagom) theme.
 
 The name is synonym of word [Lagom](https://en.wikipedia.org/wiki/Lagom) in Slavic languages.
 
-## DEMO
-
-You can see the [theme in action](http://www.karambir.in/).
+## Screenshot
 
 ![theme screenshot](https://raw.github.com/karambir/taman/master/screenshot.png)
 
@@ -17,10 +15,11 @@ You can see the [theme in action](http://www.karambir.in/).
 - minify css files
 - supports Google Analytics or custom analytics script
 - custom list of links
-- social links with FontAwesome4
+- social links with FontAwesome 6
 - a custom favicon and logo urls
 - no custom menu
 - support canonical urls
+- built with Bootstrap 5
 
 ## INSTALL
 

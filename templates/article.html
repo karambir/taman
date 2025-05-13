@@ -17,7 +17,7 @@
   <p class="meta">
     {{ article.date|strftime('%d %B %Y') }}
     <a href="/">
-      <i class="home fa fa-home"></i>
+      <i class="home fa-solid fa-home"></i>
     </a>
   </p>
 
@@ -29,7 +29,7 @@
 
   <div class="article_meta related">
     <h3>Category: </h3>
-    <span><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</span>
+    <span><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
 
     {% if article.tags %}
     <h3>Tags:</h3>
