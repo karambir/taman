@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 [Unreleased]
+## 2.0.0 [2025-05-13]
 
 ### Added
 - Bootstrap 5 support
