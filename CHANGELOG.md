@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+- Add documentation for social links
+
 ## 2.0.0 [2025-05-13]
 
 ### Added

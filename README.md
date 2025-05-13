@@ -44,14 +44,36 @@ Supports a number of common global variables but patches are welcomed if you nee
 
 - To set custom logo and favicon set following in config:
 
-    STATIC_PATHS = ['images', 'extra/favicon.png', 'extra/logo.png']
-    EXTRA_PATH_METADATA = {
-        'extra/favicon.png': {'path': 'favicon.png'},
-        'extra/logo.png': {'path': 'logo.png'},
-    }
+```python
+STATIC_PATHS = ['images', 'extra/favicon.png', 'extra/logo.png']
+EXTRA_PATH_METADATA = {
+    'extra/favicon.png': {'path': 'favicon.png'},
+    'extra/logo.png': {'path': 'logo.png'},
+}
 
-    USER_LOGO_URL = '/logo.png'
-    USER_FAVICON_URL = '/favicon.png'
+USER_LOGO_URL = '/logo.png'
+USER_FAVICON_URL = '/favicon.png'
+```
+
+- `SOCIAL` is a list of social links.
+
+```python
+SOCIAL = (
+    ('github', 'your_username'),
+    ('gitlab', 'your_username'),
+    ('hacker_news', 'your_username'),
+    ('stackexchange', 'your_username'),
+    ('stackoverflow', 'your_username'),
+    ('twitter', 'your_username'),
+    ('bluesky', 'your_username'),
+    ('facebook', 'your_username'),
+    ('instagram', 'your_username'),
+    ('tumblr', 'your_username'),
+    ('lastfm', 'your_username'),
+    ('flickr', 'your_username'),
+    ('linkedin', 'your_username'),
+)
+```
 
 When developing locally, you may want to set the following variable: `SITEURL = http://localhost:8000`
 
